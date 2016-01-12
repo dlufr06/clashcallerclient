@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-function startWar(){
-    var nrOfBases = document.getElementById("nrOfBases").value;
-    if(typeof nrOfBases === "number"){
-        createWar(nrOfBases);
-    }
-}
+//function startWar(){
+//    var nrOfBases = document.getElementById("nrOfBases").value;
+//    if(typeof nrOfBases === "number"){
+//        createWar(nrOfBases);
+//    }
+//}
 

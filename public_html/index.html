@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link href="css/war.min.css" rel="stylesheet" />
+        <link href="css/index.min.css" rel="stylesheet" />
     </head>
     <body>
 
@@ -25,30 +25,30 @@ and open the template in the editor.
                 <div class="well">
 
                     <!-- Small modal -->
-                    <button type="button" class="btn btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Create new war</button>
-                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target="#createWarModal">Create new war</button>
+                    <div class="modal fade bs-example-modal-sm" id="createWarModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                         <div class="modal-dialog modal-sm">
                             <div class="modal-content">
                                 <h1>Create War</h1>
                                 <div class="dropdown">
                                     <p>Number of bases:</p>
                                     <input type="number" id="nrOfBases"/>
-                                    <button onclick="startWar()">Start War</button>
+                                    <button onclick="createWar(getElementById('nrOfBases').value);">Start War</button>
                                 </div>
                             </div>
                         </div>
 
                     </div> <br/>
                     <!-- Small modal nr 2 -->
-                    <button type="button" class="btn btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Join War</button>
-                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target="#joinWarModal">Join War</button>
+                    <div class="modal fade bs-example-modal-sm" id="joinWarModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                         <div class="modal-dialog modal-sm">
                             <div class="modal-content">
                                 <h1>Join war</h1>
                                 <div class="dropdown">
                                     <p>War ID:</p>
-                                    <input type="number"/>
-                                    <button onclick="createWar()">Join War</button>
+                                    <input type="number" id='joinWar'/>
+                                    <button onclick="joinWar(getElementById('joinWar').value)">Join War</button>
                                 </div>
                             </div>
                         </div>
@@ -60,6 +60,6 @@ and open the template in the editor.
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mustache.min.js"></script>
-        <script src="js/script.min.js"></script>
+        <script src="js/index.min.js"></script>
     </body>
 </html>
