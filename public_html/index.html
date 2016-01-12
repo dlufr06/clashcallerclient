@@ -9,8 +9,57 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/war.min.css" rel="stylesheet" />
     </head>
     <body>
-        <div>TODO write content</div>
+
+
+        <div class="jumbotron">
+
+            <h1>ClashCallerClient</h1>
+
+        </div>
+        <div class="container">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="well">
+
+                    <!-- Small modal -->
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Create new war</button>
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <h1>Create War</h1>
+                                <div class="dropdown">
+                                    <p>Number of bases:</p>
+                                    <input type="number" id="nrOfBases"/>
+                                    <button onclick="startWar()">Start War</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <br/>
+                    <!-- Small modal nr 2 -->
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Join War</button>
+                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <h1>Join war</h1>
+                                <div class="dropdown">
+                                    <p>War ID:</p>
+                                    <input type="number"/>
+                                    <button onclick="createWar()">Join War</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mustache.min.js"></script>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
