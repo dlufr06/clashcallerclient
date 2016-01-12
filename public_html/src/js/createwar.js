@@ -5,6 +5,11 @@
  */
 //CARL
 
-function createWar(nrOfBases){
-    //http://10.97.72.5:8080/api.pdf
+function createWar(nrOfBases) {
+    var base = "http://10.97.72.5:8080";
+    var resource = "/api/cc/createwar/";
+    $.post(base+resource+nrOfBases).success(function(data){
+        console.log(data);
+        joinWar(data.warid);
+    });
 }
