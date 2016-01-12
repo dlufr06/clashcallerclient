@@ -1,0 +1,14 @@
+{
+  "name": "clashcallerclient",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {"mustache": "2.2.1",
+    "bootstrap": "3.3.6",
+    "mustache.js": "mustache#2.2.1"
+  },
+  "devDependencies": {}
+}
