@@ -6,4 +6,5 @@
 //LUDVIG!
 function joinWar(id){
     var url = "war.html?id="+id;
+    window.location.href = url;
 }
